@@ -18,34 +18,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
     Image.asset(AppImages.abcd),
     SizedBox(height: 80,),
     BottomNavigationBar(
-      type: BottomNavigationBarType.fixed,
-      backgroundColor: Color(0xFF6200EE),
-      selectedItemColor: Colors.white,
-      unselectedItemColor: Colors.white.withOpacity(.60),
-      selectedFontSize: 14,
-      unselectedFontSize: 14,
-      onTap: (value) {
-        // Respond to item press.
-      },
       items: [
         BottomNavigationBarItem(
-          title: Text('Favorites'),
-          icon: Icon(Icons.favorite),
-        ),
-        BottomNavigationBarItem(
-          title: Text('Music'),
-          icon: Icon(Icons.music_note),
-        ),
-        BottomNavigationBarItem(
-          title: Text('Places'),
-          icon: Icon(Icons.location_on),
-        ),
-        BottomNavigationBarItem(
-          title: Text('News'),
-          icon: Icon(Icons.library_books),
-        ),
-      ],
-    ),
+          label: "Hellloo",
+          icon: Icon(Icons.dark_mode)),
+          BottomNavigationBarItem(
+            label: "abc",
+            icon: Icon(Icons.g_mobiledata)),
+      ])
     ],); 
   }
 }

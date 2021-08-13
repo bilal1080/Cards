@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
            leading: CircleAvatar(child: Icon(Icons.delete),),
            actions: [
              ElevatedButton(onPressed: (){}, 
+             
              child: Text("oka")),
              ElevatedButton(onPressed: (){}, 
              child: Text("Cancel"),
