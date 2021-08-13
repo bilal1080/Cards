@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cards/core/constant/images.dart';
-//import 'package:flutter_cards/core/constant/images.dart';
+
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -11,178 +11,42 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.ad_units)),
+            Spacer(),
+            IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          ],
+          
+        ),),
+        floatingActionButton: FloatingActionButton(onPressed: (){},
+        child: Icon(Icons.add),),
+       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         appBar: AppBar(
-          title: Text("Grid View"),
+          title: Text("AppBar"),
+          centerTitle: true,
+          leading: Icon(Icons.menu),
+          actions: [
+            Icon(Icons.ac_unit_sharp),
+            Icon(Icons.dangerous)
+          ],
+          backgroundColor: Colors.grey,
         ),
-        body: ListView(padding: EdgeInsets.all(4.0), children: <Widget>[
-          Container(
-            // height: MediaQuery.of(context).size.height * 0.19,
-            // width: MediaQuery.of(context).size.width,
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  Image.asset(AppImages.abc),
-                  ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('The Enchanted Nightingale'),
-                    subtitle:
-                        Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            // height: MediaQuery.of(context).size.height * 0.19,
-            // width: MediaQuery.of(context).size.width,
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('Nusrat qawali'),
-                    subtitle: Text('Music by Nusrat.'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('rahat fateh '),
-                    subtitle: Text('Music by Rahat'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('heeelo'),
-                    subtitle: Text('Music by jee'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('Ali zafar '),
-                    subtitle: Text('Musis by zafar'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Container(
-            child: Card(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: <Widget>[
-                  const ListTile(
-                    leading: Icon(Icons.album),
-                    title: Text('rahat Indori'),
-                    subtitle: Text('Music by rahat'),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: <Widget>[
-                      TextButton(
-                        child: const Text('BUY TICKETS'),
-                        onPressed: () {/* ... */},
-                      ),
-                      TextButton(
-                        child: const Text('LISTEN'),
-                        onPressed: () {/* ... */},
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-          ),
+        body: ListView(padding: EdgeInsets.all(4.0), 
+        children: <Widget>[
+         MaterialBanner(
+           content: Text("Error is occured") , 
+           leading: CircleAvatar(child: Icon(Icons.delete),),
+           actions: [
+             ElevatedButton(onPressed: (){}, 
+             child: Text("oka")),
+             ElevatedButton(onPressed: (){}, 
+             child: Text("Cancel"),
+             )
+
+           ])
+          
         ]
         )
         );
