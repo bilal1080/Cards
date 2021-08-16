@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cards/Dialog.dart';
+import 'package:flutter_cards/Menu.dart';
+//import 'package:flutter_cards/Dialog.dart';
 
 //import 'package:flutter_cards/chips.dart';
 //import 'package:flutter_cards/Button.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DialogBox(),
+      home: menuButtons(),
     );
   }
 }

@@ -26,6 +26,10 @@ class DialogBox extends StatelessWidget {
                SimpleDialogOption(
                  child: Text("1234@gamil.com"),
                ),
+               Divider(
+                indent: 16,
+                 endIndent: 16,
+              ),
                 SimpleDialogOption(
                  child: Text("abcgd@gmail.com"),
                )
