@@ -30,23 +30,7 @@ class _slidDerState extends State<slidDer> {
                       _slidervalue = value;
                     });
                   }),
-              ElevatedButton(
-        onPressed: () {
-          final snackBar = SnackBar(
-            content: const Text('Yay! A SnackBar!'),
-            action: SnackBarAction(
-              label: 'Undo',
-              onPressed: () {
-                
-              },
-            ),
-          );
-
-          
-          ScaffoldMessenger.of(context).showSnackBar(snackBar);
-        },
-        child: const Text('Show SnackBar'),
-      ),
+             
 
             ],
           ),

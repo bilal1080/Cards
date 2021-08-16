@@ -5,6 +5,7 @@ import 'package:flutter_cards/Slider.dart';
 import 'package:flutter_cards/homescreen.dart';
 import 'package:flutter_cards/progress_indicator.dart';
 import 'package:flutter_cards/snackbar.dart';
+import 'package:flutter_cards/splash.dart';
 //import 'package:flutter_cards/Dialog.dart';
 
 //import 'package:flutter_cards/chips.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SnackBarDemo(),
+      home: Ani_splsh_screen(),
     );
   }
 }
