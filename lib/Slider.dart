@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 
+
+// ignore: camel_case_types
 class slidDer extends StatefulWidget {
   @override
   _slidDerState createState() => _slidDerState();
 }
 
+// ignore: camel_case_types
 class _slidDerState extends State<slidDer> {
   double _slidervalue = 20;
   @override
@@ -26,7 +29,25 @@ class _slidDerState extends State<slidDer> {
                     setState(() {
                       _slidervalue = value;
                     });
-                  })
+                  }),
+              ElevatedButton(
+        onPressed: () {
+          final snackBar = SnackBar(
+            content: const Text('Yay! A SnackBar!'),
+            action: SnackBarAction(
+              label: 'Undo',
+              onPressed: () {
+                
+              },
+            ),
+          );
+
+          
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        },
+        child: const Text('Show SnackBar'),
+      ),
+
             ],
           ),
         ),
