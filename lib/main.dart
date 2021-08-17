@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cards/snackbar.dart';
 import 'package:flutter_cards/tabs.dart';
 import 'package:flutter_cards/textformfield.dart';
+import 'package:flutter_cards/timechange.dart';
 //import 'package:flutter_cards/splash.dart';
 //import 'package:flutter_cards/Dialog.dart';
 //import 'package:flutter_cards/chips.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TextFormScreen(),
+      home: timePicker(),
     );
   }
 }
